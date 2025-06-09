@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-primario: #28a745;
+  --color-primario-hover: #218838;
+  --color-fondo: #f5f7fa;
+  --color-texto: #1f1f1f;
+  --color-tarjeta: #ffffff;
+  --sombra-suave: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05);
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: 'Inter', sans-serif;
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h5 {
+  color: var(--color-texto);
+  font-weight: 700;
+}
+
+p {
+  color: #6c757d;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--color-tarjeta);
+  border: none;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--sombra-suave);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.005);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-radius: 0.6rem;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.2);
+}
+
+.btn-success {
+  background-color: var(--color-primario);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--color-primario-hover);
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 0.4em 0.75em;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
