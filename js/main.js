@@ -40,7 +40,7 @@ function renderizarMaterias() {
   materias.forEach((materia) => {
     const li = document.createElement("li");
     li.className = "list-group-item";
-    li.textContent = 📘 ${materia.nombre} - Nota: ${materia.nota};
+    li.textContent = `📘 ${materia.nombre} - Nota: ${materia.nota}`;
 
     const badge = document.createElement("span");
     badge.className = "badge bg-" + (materia.nota >= NOTA_PROMOCION ? "success" : "danger");
@@ -52,5 +52,5 @@ function renderizarMaterias() {
   });
 
   const promedio = total / materias.length;
-  promedioFinal.textContent = 🎓 Promedio general: ${promedio.toFixed(2)};
+  promedioFinal.textContent = `🎓 Promedio general: ${promedio.toFixed(2)}`;
 }
